@@ -26,7 +26,40 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.form {
+  margin: 0 auto;
+  width: 120px;
+}
+
+input {
+  font-size: 16px;
+}
+
+.react-datepicker-wrapper input {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  outline: none;
+  color: white;
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (orientation: landscape) {
+  .form {
+    width: 100%;
+  }
+
+  .form>* {
+    margin: 0 20px;
   }
 }

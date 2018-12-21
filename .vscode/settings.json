@@ -1,0 +1,39 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.rulers": [
+    140
+  ],
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "yarn.lock": true,
+    "**/.git": true,
+    "**/build": true,
+    "**/temp": true
+  },
+  "files.exclude": {
+    "node_modules": true,
+    "yarn.lock": true,
+    "**/.editorconfig": false,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.gitignore": false,
+    "**/.gitmodules": true,
+    "**/*.css": false,
+    "**/*.svg": true,
+    "**/*.gif": true,
+    "**/*.ico": true,
+    "**/*.jpg": true,
+    "**/*.jpeg": true,
+    "**/*.png": true,
+    "**/*.psd": true,
+    "**/*.tga": true,
+    "**/*.tif": true,
+    "**/*.tiff": true,
+    "build/": true,
+    "temp/": true
+  }
+}
