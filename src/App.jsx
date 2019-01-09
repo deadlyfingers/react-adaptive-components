@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import AdaptiveSelect from './components/AdaptiveSelect';
 import AdaptiveDatePicker from './components/AdaptiveDatePicker';
 import theme from './theme';
@@ -35,24 +35,32 @@ class App extends Component {
     const { selectedValue, selectedDate } = this.state;
     return (
       <MuiThemeProvider theme={theme}>
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              <code>src/App.js</code>
-            </p>
-            <div className="container">
-              <div className="form">
-                <AdaptiveSelect
-                  options={{ en: 'English', de: 'German', fr: 'French' }}
-                  value={selectedValue}
-                  onChange={this.handleSelectChange}
-                />
-                <AdaptiveDatePicker onChange={this.handleDateChange} value={selectedDate} />
+        <header className="grid-container full">
+          <div className="grid-x">
+            <div className="cell small-12">
+              <img src={logo} className="App-logo float-center" alt="logo" />
+            </div>
+            <div className="cell small-12">
+              <div className="text-center margin">
+                <code>src/App.js</code>
               </div>
             </div>
-          </header>
-        </div>
+          </div>
+        </header>
+        <main className="grid-container fluid">
+          <div className="grid-x grid-margin-x">
+            <div className="cell small-12 medium-6">
+              <AdaptiveSelect
+                options={{ en: 'English', de: 'German', fr: 'French' }}
+                value={selectedValue}
+                onChange={this.handleSelectChange}
+              />
+            </div>
+            <div className="cell small-12 medium-6">
+              <AdaptiveDatePicker onChange={this.handleDateChange} value={selectedDate} />
+            </div>
+          </div>
+        </main>
       </MuiThemeProvider>
     );
   }

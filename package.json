@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.7.0",
+    "foundation-sites": "^6.5.1",
     "react": "^16.7.0",
     "react-datepicker": "^2.0.0",
     "react-device-detect": "^1.6.1",
@@ -27,6 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0"
+    "eslint-config-airbnb": "^17.1.0",
+    "node-sass": "^4.11.0"
   }
 }
